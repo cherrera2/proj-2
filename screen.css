@@ -38,7 +38,7 @@ h4{
 }
 
 p {
-  font-size: 0.96em;
+  font-size: 0.768em;
   padding-right: 0.96em;
 }
 
@@ -51,7 +51,7 @@ ul.nav-info{
 
 ul.info{
 
-  font-size: 0.96em;
+  font-size: 0.768em;
   padding:0.96em;
   list-style: square;
 
@@ -64,7 +64,7 @@ ol.repair-instructions{
 }
 
 footer{
-  font-size: 0.768em; /* 1.25 Ratio */
+  font-size: 0.614em; /* 1.25 Ratio */
   color: rgb(84, 84, 84); /* grey */
 }
 
@@ -88,6 +88,14 @@ footer{
     text-align: center;
     padding: 0.96em;
 
+  }
+
+  p {
+    font-size: 0.96em;
+  }
+
+  ul.info{
+    font-size: 0.96em;
   }
 
 }
@@ -118,4 +126,26 @@ footer{
 
   }
 
-}
+  ul.info{
+    font-size: 0.96em;
+  }
+
+  #employment,
+  #education
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  #asm,
+  #lindblom {
+    grid-column-start: 1;
+    grid-row-start: 2
+  }
+
+  #cte,
+  #iit {
+    grid-column-start: 2;
+    grid-row-start: 2
+  }
