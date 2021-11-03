@@ -36,6 +36,10 @@ h4{
   font-weight: bold;
 }
 
+p {
+  padding-right: 0.96em;
+}
+
 ul.nav-info{
   text-align: center;
   padding: 0.96em;
@@ -54,6 +58,6 @@ ol.repair-instructions{
 }
 
 footer{
-  font-size: 0.96em; /* 1.25 Ratio */
+  font-size: 0.768em; /* 1.25 Ratio */
   color: rgb(84, 84, 84); /* grey */
 }
