@@ -9,11 +9,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Begin site styles below */
 
 html {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: rgb(245, 245, 245);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.5em;
   line-height: 1.8em; /* 1.5 * 1.2 = 1.8 */
   padding-left: 0.96em;
-  background-color: rgb(245, 245, 245);
 }
 
 h3,
@@ -22,38 +22,23 @@ p {
   padding-bottom: 0.9em; /*1.8 / 2 = 0.9 */
 }
 
-h1{
-
+h1 {
+  background-color: rgb(220, 222, 245); /* Purple */
   font-size: 2.344em; /* 1.25 Ratio */
-  line-height: 2.7em; /* 2.344 * 1.5 = 2.7 */
-  background-color: rgb(220, 222, 245);
-
+  line-height: 2.7em; /* 1.8 * 1.5 = 2.7 */
 }
 
-h2{
+h2 {
   font-size: 1.875em; /* 1.25 Ratio */
   line-height: 2.7em; /* 1.8 * 1.5 = 2.7 */
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.2em; /* 1.25 Ratio */
 }
 
-h4{
+h4 {
   font-weight: bold;
-}
-
-p {
-  font-size: 0.768em;
-  padding-right: 0.96em;
-}
-
-ul.nav-info{
-
-  text-align: center;
-  background-color: rgb(220, 222, 245);
-  box-shadow: 0 10px 10px -10px grey;
-
 }
 
 nav a {
@@ -62,66 +47,78 @@ nav a {
   text-decoration: none;
 }
 
-ul.info{
-  font-size: 0.768em;
-  list-style: square;
-  padding: 0.96em;
+p {
+  font-size: 0.768em; /* 1.25 Ratio */
+  padding-right: 0.96em;
 }
 
-ol.repair-instructions{
+ol.repair-instructions {
   font-size: 0.768em;
   list-style: decimal;
   padding: 0.96em;
 }
 
-footer{
+ul.info {
+  font-size: 0.768em;
+  list-style: square;
+  padding: 0.96em;
+}
+
+ul.nav-info {
+  background-color: rgb(220, 222, 245); /* Purple */
+  box-shadow: 0 0.625em 0.625em -0.625em grey;
+  text-align: center;
+}
+
+ul.tracks {
+  list-style: none;
+}
+
+footer {
+  color: rgb(84, 84, 84); /* Grey */
   font-size: 0.614em; /* 1.25 Ratio */
-  color: rgb(84, 84, 84); /* grey */
 }
 
 @media screen and (min-width: 26.25em)  /* 420px = 26.25em */ {
 
-  h1{
-    font-size: 2.344em; /* 1.25 Ratio */
-    line-height: 2.7em; /* 1.8 * 1.5 = 2.7 */
-
+  h1 {
     display: flex;
     flex-direction: row;
+    font-size: 2.344em; /* 1.25 Ratio */
     justify-content: center;
+    line-height: 2.7em; /* 1.8 * 1.5 = 2.7 */
   }
 
   h3 {
     font-size: 1.5em;
   }
 
-  ul.nav-info{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    font-size: 1.2em;
-    text-align: center;
-    padding: 0.96em;
-
-  }
-
   p,
   ul.info,
   ol.repair-instructions {
     font-size: 0.96em;
+  }
+
+  ul.nav-info {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2em;
+    text-align: center;
+    justify-content: space-around;
+    padding: 0.96em;
+
   }
 
 }
 
 @media screen and (min-width: 48.75em)  /* 780px = 48.75em */ {
 
-  h1{
-    font-size: 2.93em; /* 1.25 Ratio */
-    line-height: 3.6em; /* 1.8* 2 = 3.6 */
-
+  h1 {
     display: flex;
+    font-size: 2.93em; /* 1.25 Ratio */
     flex-direction: row;
     justify-content: center;
+    line-height: 3.6em; /* 1.8* 2 = 3.6 */
   }
 
   h3 {
@@ -134,24 +131,27 @@ footer{
     font-size: 0.96em;
   }
 
+  ul.nav-info {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.875em;
+    justify-content: center;
+    padding: 0.96em;
+    text-align: center;
+  }
+
+  ul.tracks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
   #chromebook {
     text-align: center;
   }
 
-  ul.nav-info{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    font-size: 1.875em;
-    text-align: center;
-    padding: 0.96em;
-
-  }
-
   #employment,
-  #education
-  {
+  #education {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -160,11 +160,13 @@ footer{
   #asm,
   #lindblom {
     grid-column-start: 1;
-    grid-row-start: 2
+    grid-row-start: 2;
   }
 
   #cte,
   #iit {
     grid-column-start: 2;
-    grid-row-start: 2
+    grid-row-start: 2;
   }
+
+}
