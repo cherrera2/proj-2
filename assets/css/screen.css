@@ -11,72 +11,82 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   background-color: rgb(245, 245, 245);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.5em;
-  line-height: 1.8em; /* 1.5 * 1.2 = 1.8 */
-  padding-left: 0.96em;
+  font-size: 24px;
+  line-height: 28.8px; /* 24px * 1.2 = 28.8px */
 }
 
 h3,
 h4,
 p {
-  padding-bottom: 0.9em; /*1.8 / 2 = 0.9 */
+  padding-bottom: 12px; /*24 / 2 = 12 */
+  padding-left: 19.2px;
 }
 
 h1 {
   background-color: rgb(220, 222, 245); /* Purple */
-  font-size: 2.344em; /* 1.25 Ratio */
-  line-height: 2.7em; /* 1.8 * 1.5 = 2.7 */
+  font-size: 37.5px; /* 1.25 Ratio */
+  line-height: 48px; /* 24 * 2 = 48*/
+  padding: 19.2px
 }
 
 h2 {
-  font-size: 1.875em; /* 1.25 Ratio */
-  line-height: 2.7em; /* 1.8 * 1.5 = 2.7 */
+  font-size: 30px; /* 1.25 Ratio */
+  line-height: 36px; /* 24 * 1.5 = 36 */
+  padding: 19.2px;
 }
 
 h3 {
-  font-size: 1.2em; /* 1.25 Ratio */
+  font-size: 19.2px; /* 1.25 Ratio */
 }
 
 h4 {
+  font-size: 19.2px; /* 1.25 Ratio */
   font-weight: bold;
 }
 
 nav a {
   display: block;
-  padding: 0.96em;
+  padding: 15.36px;
   text-decoration: none;
 }
 
 p {
-  font-size: 0.768em; /* 1.25 Ratio */
-  padding-right: 0.96em;
+  font-size: 15.36px; /* 1.25 Ratio */
 }
 
 ol.repair-instructions {
-  font-size: 0.768em;
+  font-size: 15.36px;
   list-style: decimal;
-  padding: 0.96em;
+  padding-left: 19.2px;
 }
 
 ul.info {
-  font-size: 0.768em;
+  font-size: 15.36px;
   list-style: square;
-  padding: 0.96em;
+  padding-left: 38.4px
 }
 
 ul.nav-info {
   background-color: rgb(220, 222, 245); /* Purple */
   box-shadow: 0 0.625em 0.625em -0.625em grey;
+  font-size: 19.2px;
   text-align: center;
 }
 
 ul.tracks {
   list-style: none;
+  padding: 19.2px;
+}
+
+ul.tracks h4 {
+  padding: 0;
+  padding-bottom: 12px;
 }
 
 footer {
   color: rgb(84, 84, 84); /* Grey */
-  font-size: 0.614em; /* 1.25 Ratio */
+  font-size: 12.288px; /* 1.25 Ratio */
+  padding-left: 19.2px
 }
 
 @media screen and (min-width: 26.25em)  /* 420px = 26.25em */ {
@@ -84,28 +94,25 @@ footer {
   h1 {
     display: flex;
     flex-direction: row;
-    font-size: 2.344em; /* 1.25 Ratio */
     justify-content: center;
-    line-height: 2.7em; /* 1.8 * 1.5 = 2.7 */
   }
 
   h3 {
-    font-size: 1.5em;
+    font-size: 24px;
   }
 
   p,
   ul.info,
   ol.repair-instructions {
-    font-size: 0.96em;
+    font-size: 19.2px;
   }
 
   ul.nav-info {
     display: flex;
     flex-direction: row;
-    font-size: 1.2em;
+    font-size: 24px;
     text-align: center;
     justify-content: space-around;
-    padding: 0.96em;
 
   }
 
@@ -115,28 +122,28 @@ footer {
 
   h1 {
     display: flex;
-    font-size: 2.93em; /* 1.25 Ratio */
+    font-size: 46.875px; /* 1.25 Ratio */
     flex-direction: row;
     justify-content: center;
-    line-height: 3.6em; /* 1.8* 2 = 3.6 */
+    line-height: 48px; /* 24* 2 = 48 */
   }
 
   h3 {
-    font-size: 1.5em;
+    font-size: 24px;
   }
 
   p,
   ul.info,
   ol.repair-instructions {
-    font-size: 0.96em;
+    font-size: 19.2px;
   }
 
   ul.nav-info {
     display: flex;
     flex-direction: row;
-    font-size: 1.875em;
+    font-size: 30px;
     justify-content: center;
-    padding: 0.96em;
+    line-height: 36px;
     text-align: center;
   }
 
@@ -144,6 +151,10 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
+  }
+
+  footer {
+    font-size: 15.36px;
   }
 
   #chromebook {
