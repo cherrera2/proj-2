@@ -24,7 +24,10 @@ p {
 
 h1 {
   background-color: rgb(220, 222, 245); /* Purple */
+  display: flex;
+  flex-direction: row;
   font-size: 37.5px; /* 1.25 Ratio */
+  justify-content: center;
   line-height: 48px; /* 24 * 2 = 48*/
   padding: 19.2px
 }
@@ -40,7 +43,7 @@ h3 {
 }
 
 h4 {
-  font-size: 19.2px; /* 1.25 Ratio */
+  font-size: 15.36px; /* 1.25 Ratio */
   font-weight: bold;
 }
 
@@ -57,7 +60,9 @@ p {
 ol.repair-instructions {
   font-size: 15.36px;
   list-style: decimal;
-  padding-left: 19.2px;
+  padding-left: 38.4px;
+  padding-top: 12px;
+  padding-bottom: 24px;
 }
 
 ul.info {
@@ -89,16 +94,22 @@ footer {
   padding-left: 19.2px
 }
 
-@media screen and (min-width: 26.25em)  /* 420px = 26.25em */ {
+#contact,
+#employment,
+#education,
+#accomplishments {
+  padding-bottom: 24px;
+  padding-top: 12px;
+}
 
-  h1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+@media screen and (min-width: 26.25em)  /* 420px = 26.25em */ {
 
   h3 {
     font-size: 24px;
+  }
+
+  h4 {
+    font-size: 19.2px;
   }
 
   p,
@@ -121,15 +132,16 @@ footer {
 @media screen and (min-width: 48.75em)  /* 780px = 48.75em */ {
 
   h1 {
-    display: flex;
     font-size: 46.875px; /* 1.25 Ratio */
-    flex-direction: row;
-    justify-content: center;
     line-height: 48px; /* 24* 2 = 48 */
   }
 
   h3 {
     font-size: 24px;
+  }
+
+  h4 {
+    font-size: 19.2px;
   }
 
   p,
