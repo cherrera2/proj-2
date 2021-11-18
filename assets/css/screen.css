@@ -69,6 +69,16 @@ nav a {
   display: block;
   padding: 15.36px;
   text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  background-color: rgb(104, 71, 143);
+  color: rgb(245, 245, 245);
+}
+
+nav a.active {
+  background-color: rgb(173, 155, 194);
 }
 
 p {
@@ -81,6 +91,11 @@ ol.repair-instructions {
   padding-left: 38.4px;
   padding-top: 12px;
   padding-bottom: 24px;
+}
+
+section.album h3 {
+  padding-left: 0;
+  text-align: center;
 }
 
 ul.info {
