@@ -11,46 +11,43 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   background-color: rgb(245, 245, 245); /* Light Grey */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 24px; /*1em // 1.5em @ 16*/
-  line-height: 28.8px; /* 24px * 1.2 = 28.8px */
-}
-
-h3,
-h4,
-p {
-  padding-bottom: 12px; /*24 / 2 = 12 */
-  padding-left: 19.2px; /*0.8em // 1.2em @ 16*/
+  font-size: 1.5em; /* 24/16 = 1.5em */
+  line-height: 1.2em; /* 28.8/ 24 = 1.2em */
 }
 
 h1 {
   background-color: rgb(220, 222, 245); /* Purple */
   display: flex;
   flex-direction: row;
-  font-size: 37.5px; /*1.563em // 2.344em @ 16*/
+  font-size: 1.5625em; /* 37.5 / 24 = 1.5625em */
   justify-content: center;
-  line-height: 48px; /* 24 * 2 = 48*/
-  padding: 19.2px; /*0.8em // 1.2em @ 16*/
+  line-height: 1.28em; /* 48 / 37.5 = 1.28em */
+  padding: 0.512em; /* 19.2 / 37.5 = 0.512em */
 }
 
 h2 {
-  font-size: 30px; /*1.25em // 1.875em @ 16*/
-  line-height: 36px; /* 24 * 1.5 = 36 */
-  padding: 19.2px; /*0.8em // 1.2em @ 16*/
+  font-size: 1.25em; /* 30 / 24 = 1.25em */
+  line-height: 1.2em; /* 36 / 30 = 1.2em */
+  padding: 0.64em; /* 30 / 19.2 = 0.64em */
 }
 
 h3 {
-  font-size: 19.2px; /*0.8em // 1.2em @ 16*/
+  font-size: 0.7999999999999999em; /* 19.2 / 24 = 0.7999999999999999em*/
+  padding-bottom: 0.625em; /* 12 / 19.2 = 0.625em */
+  padding-left: 1em; /* 19.2 / 19.2 = 1em */
 }
 
 h4 {
-  font-size: 15.36px; /*0.64em // 0.96em @ 16*/
+  font-size: 0.64em; /* 15.36 / 24 = 0.64em */
   font-weight: bold;
+  padding-bottom: 0.78125em; /* 12 / 15.36 = 0.78125em */
+  padding-left: 1.25em; /* 19.2 / 15.36 = 1.25em */
 }
 
 figcaption {
-  font-size: 15.36px; /*0.64em // 0.96em @ 16*/
+  font-size: 0.64em; /* 15.36 / 24 = 0.64em */
   font-style: italic;
-  padding-bottom: 24px; /*1em // 1.5em @ 16*/
+  padding-bottom: 1.5625em; /* 24 / 15.36 = 1.5625em */
 }
 
 figure.image {
@@ -62,19 +59,19 @@ img {
   max-width: 50%;
   margin-left: auto;
   margin-right: auto;
-  padding: 12px;
+  padding: 0.5em; /* 24 / 12 = 0.5em */
 }
 
 nav a {
-  display: block;
-  padding: 15.36px; /*0.64em // 0.96em @ 16*/
-  text-decoration: none;
   color: black;
+  display: block;
+  padding: 0.8em; /* 15.36 / 19.2 = 0.8*/
+  text-decoration: none;
 }
 
 nav a:hover {
-  background-color: rgb(104, 71, 143); /* Dark Purple */
   color: rgb(245, 245, 245); /* Light Grey */
+  background-color: rgb(104, 71, 143); /* Dark Purple */
 }
 
 li.active a {
@@ -82,15 +79,21 @@ li.active a {
 }
 
 p {
-  font-size: 15.36px; /*0.64em // 0.96em @ 16*/
+  padding-bottom: 0.78125em; /*12 / 15.36 = 0.78125em */
+  padding-left: 1.25em; /* 19.2 / 15.36 = 0.78125em */
+}
+
+p,
+ol.repair-instructions,
+ul.info {
+  font-size: 0.64em; /* 15.36 / 24 = 0.64em */
 }
 
 ol.repair-instructions {
-  font-size: 15.36px; /*0.64em // 0.96em @ 16*/
   list-style: decimal;
-  padding-left: 38.4px;
-  padding-top: 12px;
-  padding-bottom: 24px; /*1em // 1.5em @ 16*/
+  padding-bottom: 1.5625em; /* 24 / 15.36 = 1.5625em*/
+  padding-left: 2.5em; /* 38.4 / 15.36 = 2.5em */
+  padding-top: 0.78125em; /* 12 / 15.36 = 0.78125em */
 }
 
 section.album h3 {
@@ -99,64 +102,81 @@ section.album h3 {
 }
 
 ul.info {
-  font-size: 15.36px; /*0.64em // 0.96em @ 16*/
   list-style: square;
-  padding-left: 38.4px;
+  padding-left: 2.5em; /* 38.4 / 15.36 = 2.5em */
 }
 
 ul.nav-info {
   background-color: rgb(220, 222, 245); /* Purple */
   box-shadow: 0 0.625em 0.625em -0.625em grey;
-  font-size: 19.2px; /*0.8em // 1.2em @ 16*/
+  font-size: 0.7999999999999999em; /* 19.2 / 24 = 0.7999999999999999em*/
   text-align: center;
 }
 
 ul.tracks {
   list-style: none;
-  padding: 19.2px; /*0.8em // 1.2em @ 16*/
+  padding: 0.7999999999999999em; /* 19.2 / 24 = 0.7999999999999999em*/
 }
 
 ul.tracks h4 {
   padding: 0;
-  padding-bottom: 12px;
+  padding-bottom: 0.5em; /* 24 / 12 = 0.5em */
 }
 
 footer {
   color: rgb(84, 84, 84); /* Grey */
-  font-size: 12.288px; /* 1.25 Ratio */
-  padding-left: 19.2px; /*0.8em // 1.2em @ 16*/
+  font-size: 0.512em; /* 12.288 / 24 = 0.512em */
+  padding-left: 1.5625em; /* 19.2 / 12.288 = 1.5625em */
 }
 
 #contact,
 #employment,
 #education,
 #accomplishments {
-  padding-bottom: 24px; /*1em // 1.5em @ 16*/
-  padding-top: 12px;
+  padding-bottom: 1em; /* 24 / 24 = 1em */
+  padding-top: 0.5em; /* 12 / 24 = 0.5em */
 }
 
 @media screen and (min-width: 26.25em)  /* 420px = 26.25em */ {
 
   h3 {
-    font-size: 24px; /*1em // 1.5em @ 16*/
+    font-size: 1em; /* 24 / 24 = 1em */
+    padding-bottom: 0.5em; /* 12 / 24 = 0.5em */
+    padding-left: 0.7999999999999999em; /* 19.2 / 24 = 0.7999999999999999em*/
   }
 
   h4 {
-    font-size: 19.2px; /*0.8em // 1.2em @ 16*/
+    font-size: 0.7999999999999999em; /* 19.2 / 24 = 0.7999999999999999em*/
+    padding-bottom: 0.625em; /* 12 / 19.2 = 0.625em */
+    padding-left: 1em; /* 19.2 / 19.2 = 1em*/
+  }
+
+  p {
+    padding-bottom: 0.625em; /* 12 / 19.2 = 0.625em */
+    padding-left: 1em; /* 19.2 / 19.2 = 1em*/
   }
 
   p,
   ul.info,
   ol.repair-instructions {
-    font-size: 19.2px; /*0.8em // 1.2em @ 16*/
+    font-size: 0.7999999999999999em; /* 19.2 / 24 = 0.7999999999999999em*/
+  }
+
+  ol.repair-instructions {
+    padding-bottom: 1.25em; /* 24 / 19.2 = 1.25em*/
+    padding-left: 2em; /* 38.4 / 19.2 = 2em */
+    padding-top: 0.625em; /* 12 / 19.2 = 0.625em */
+  }
+
+  ul.info {
+    padding-left: 2em; /* 38.4 / 19.2 = 2em */
   }
 
   ul.nav-info {
     display: flex;
     flex-direction: row;
-    font-size: 24px; /*1em // 1.5em @ 16*/
+    font-size: 1em; /* 24 / 24 = 1em */
     justify-content: space-around;
-
   }
 
 }
@@ -164,31 +184,55 @@ footer {
 @media screen and (min-width: 48.75em)  /* 780px = 48.75em */ {
 
   h1 {
-    font-size: 46.875px; /*1.953em // 2.93em @ 16*/
-    line-height: 48px; /* 24* 2 = 48 */
+    font-size: 1.953125em; /* 46.875 / 24 = 1.953125em*/
+    line-height: 1.024em; /* 48 / 46.875 = 1.024em */
+    padding: 0.40959999999999996em; /* 19.2 / 46.875 = 0.40959999999999996em */
   }
 
   h3 {
-    font-size: 24px; /*1em // 1.5em @ 16*/
+    font-size: 1em; /* 24 / 24 = 1em */
+    padding-bottom: 0.5em; /* 12 / 24 = 0.5em */
+    padding-left: 0.7999999999999999em; /* 19.2 / 24 = 0.7999999999999999em*/
   }
 
   h4 {
-    font-size: 19.2px; /*0.8em // 1.2em @ 16*/
+    font-size: 0.7999999999999999em; /* 19.2 / 24 = 0.7999999999999999em*/
+    padding-bottom: 0.625em; /* 12 / 19.2 = 0.625em */
+    padding-left: 1em; /* 19.2 / 19.2 = 1em*/
+  }
+
+  figcaption {
+    padding-bottom: 1.25em; /* 24 / 19.2 = 1.25em */
   }
 
   figcaption,
   p,
   ul.info,
   ol.repair-instructions {
-    font-size: 19.2px; /*0.8em // 1.2em @ 16*/
+    font-size: 0.7999999999999999em; /* 19.2 / 24 = 0.7999999999999999em*/
+  }
+
+  p {
+    padding-bottom: 0.625em; /* 12 / 19.2 = 0.625em */
+    padding-left: 1em; /* 19.2 / 19.2 = 1em*/
+  }
+
+  ol.repair-instructions {
+    padding-bottom: 1.25em; /* 24 / 19.2 = 1.25em*/
+    padding-left: 2em; /* 38.4 / 19.2 = 2em */
+    padding-top: 0.625em; /* 12 / 19.2 = 0.625em */
+  }
+
+  ul.info {
+    padding-left: 2em; /* 38.4 / 19.2 = 2em */
   }
 
   ul.nav-info {
     display: flex;
     flex-direction: row;
-    font-size: 30px; /*1.25em // 1.875em @ 16*/
+    font-size: 1.25em; /* 30 / 24 = 1.25em */
     justify-content: center;
-    line-height: 36px;
+    line-height: 1.2em; /* 36 / 30 = 1.2em */
   }
 
   ul.tracks {
@@ -198,7 +242,8 @@ footer {
   }
 
   footer {
-    font-size: 15.36px; /*0.64em // 0.96em @ 16*/
+    font-size: 0.64em; /* 15.36 / 24 = 0.64em */
+    padding-left: 1.25em; /* 19.2 / 15.36 = 1.25em */
   }
 
   #chromebook {
